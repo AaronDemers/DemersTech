@@ -1,6 +1,6 @@
 {
     "name": "PietteTech_DHT",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "author": "Aaron Demers Aaron_d26.com",
     "license": "GPL v3 (http://www.gnu.org/licenses/gpl.html)",
     "description": "Interrupt driven DHT11/21/22 Sensor library"
