@@ -1,6 +1,6 @@
 /*
  * FILE:        DHT_example.cpp
- * VERSION:     0.4
+ * VERSION:     0.5
  * PURPOSE:     Example that uses DHT library with two sensors
  * LICENSE:     GPL v3 (http://www.gnu.org/licenses/gpl.html)
  *
