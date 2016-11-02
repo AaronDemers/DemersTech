@@ -1,6 +1,6 @@
 /*
  * FILE:        PietteTech_DHT.cpp
- * VERSION:     0.4
+ * VERSION:     0.5
  * PURPOSE:     Spark Interrupt driven lib for DHT sensors
  * LICENSE:     GPL v3 (http://www.gnu.org/licenses/gpl.html)
  *
