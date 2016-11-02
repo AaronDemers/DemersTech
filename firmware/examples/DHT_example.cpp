@@ -23,7 +23,7 @@
 //#include "PietteTech_DHT.h"                 // Uncomment if building using CLI
 
 // system defines
-#define DHTTYPE  DHT22              // Sensor type DHT11/21/22/AM2301/AM2302
+#define DHTTYPE  DHT11              // Sensor type DHT11/21/22/AM2301/AM2302
 #define DHTPIN   3         	    // Digital pin for communications
 #define DHT_SAMPLE_INTERVAL   2000  // Sample every two seconds
 
