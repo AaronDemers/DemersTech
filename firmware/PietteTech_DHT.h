@@ -1,10 +1,10 @@
 /*
  * FILE:        PietteTech_DHT.h
- * VERSION:     0.4
+ * VERSION:     0.5
  * PURPOSE:     Spark Interrupt driven lib for DHT sensors
  * LICENSE:     GPL v3 (http://www.gnu.org/licenses/gpl.html)
  *
- * S Piette (Piette Technologies) scott.piette@gmail.com
+ * S Piette (Piette Technologies) scott.piette@gmail.com (Originally, Scott gets all the credit for this one)
  *      January 2014        Original Spark Port
  *      October 2014        Added support for DHT21/22 sensors
  *                          Improved timing, moved FP math out of ISR
