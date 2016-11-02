@@ -1,18 +1,13 @@
 /*
- * FILE:        PietteTech_DHT.cpp
- * VERSION:     0.5
+ * FILE:        DemersTech_DHT.cpp
+ * VERSION:     0.5.3
  * PURPOSE:     Spark Interrupt driven lib for DHT sensors
  * LICENSE:     GPL v3 (http://www.gnu.org/licenses/gpl.html)
  *
- * S Piette (Piette Technologies) scott.piette@gmail.com
- *      January 2014        Original Spark Port
- *      October 2014        Added support for DHT21/22 sensors
- *                          Improved timing, moved FP math out of ISR
- *      September 2016      Updated for Particle and removed dependency
- *                          on callback_wrapper.  Use of callback_wrapper
- *                          is still for backward compatibility but not used
+ * Aaron Demers, inspired almost completely on Piette Tech
+ *     
  *
- * Based on adaptation by niesteszeck (github/niesteszeck)
+ * Based on adaptation by S Piette (Piette Technologies) scott.piette@gmail.com
  * Based on original DHT11 library (http://playgroudn.adruino.cc/Main/DHT11Lib)
  *
  *
