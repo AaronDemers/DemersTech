@@ -1,23 +1,16 @@
 /*
  * FILE:        DHT_simple.cpp
- * VERSION:     0.5
+ * VERSION:     0.5.3
  * PURPOSE:     Example that uses DHT library with two sensors
  * LICENSE:     GPL v3 (http://www.gnu.org/licenses/gpl.html)
  *
  * Samples one sensor and monitors the results for long term
  * analysis.  It calls DHT.acquireAndWait
  *
- * Scott Piette (Piette Technologies) scott.piette@gmail.com
- *      January 2014        Original Spark Port
- *      October 2014        Added support for DHT21/22 sensors
- *                          Improved timing, moved FP math out of ISR
- *      September 2016      Updated for Particle and removed dependency
- *                          on callback_wrapper.  Use of callback_wrapper
- *                          is still for backward compatibility but not used
  */
 
-#include "PietteTech_DHT/PietteTech_DHT.h"  // Uncomment if building in IDE
-//#include "PietteTech_DHT.h"                 // Uncomment if building using CLI
+#include "DemersTech_DHT/DemersTech_DHT.h"  // Uncomment if building in IDE
+//#include "DemersTech_DHT.h"                 // Uncomment if building using CLI
 
 #define DHTTYPE  DHT11       // Sensor type DHT11/21/22/AM2301/AM2302
 #define DHTPIN   3           // Digital pin for communications
@@ -29,7 +22,7 @@
 //void dht_wrapper(); // must be declared before the lib initialization
 
 // Lib instantiate
-PietteTech_DHT DHT(DHTPIN, DHTTYPE);
+DemersTech_DHT DHT(DHTPIN, DHTTYPE);
 int n;      // counter
 
 void setup()
