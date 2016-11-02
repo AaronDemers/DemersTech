@@ -1,6 +1,6 @@
 /*
  * FILE:        DHT_2sensor.cpp
- * VERSION:     0.5
+ * VERSION:     0.5.3
  * PURPOSE:     Example that uses DHT library with two sensors
  * LICENSE:     GPL v3 (http://www.gnu.org/licenses/gpl.html)
  *
@@ -19,8 +19,8 @@
 // NOTE DHT_REPORT_TIMING requires DHT_DEBUG_TIMING in PietteTech_DHT.h for debugging edge->edge timings
 //#define DHT_REPORT_TIMING
 
-#include "PietteTech_DHT/PietteTech_DHT.h"  // Uncomment if building in IDE
-//#include "PietteTech_DHT.h"                 // Uncomment if building using CLI
+#include "DemersTech_DHT/DemersTech_DHT.h"  // Uncomment if building in IDE
+//#include "DemersTech_DHT.h"                 // Uncomment if building using CLI
 
 #define DHTTYPEA  DHT22       // Sensor type DHT11/21/22/AM2301/AM2302
 #define DHTPINA   4           // Digital pin for comunications
@@ -28,8 +28,8 @@
 #define DHTPINB   3           // Digital pin for comunications
 
 // Instantiate two class objects
-PietteTech_DHT DHTA(DHTPINA, DHTTYPEA);
-PietteTech_DHT DHTB(DHTPINB, DHTTYPEB);
+DemersTech_DHT DHTA(DHTPINA, DHTTYPEA);
+DemersTech_DHT DHTB(DHTPINB, DHTTYPEB);
 int n;      // counter
 
 #define LOOP_DELAY 5000 // 5s intervals
@@ -57,7 +57,7 @@ void setup()
 
 #if defined(DHT_REPORT_TIMING)
 // This function will report the timings collected
-void printEdgeTiming(class PietteTech_DHT *_d) {
+void printEdgeTiming(class DemersTech_DHT *_d) {
     byte n;
     volatile uint8_t *_e = &_d->_edges[0];
     
@@ -71,7 +71,7 @@ void printEdgeTiming(class PietteTech_DHT *_d) {
 }
 #endif
 
-void printSensorData(class PietteTech_DHT *_d) {
+void printSensorData(class DemersTech_DHT *_d) {
     int result = _d->getStatus();
 
     if (result != DHTLIB_OK)
