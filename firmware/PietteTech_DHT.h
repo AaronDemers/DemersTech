@@ -1,18 +1,11 @@
 /*
- * FILE:        PietteTech_DHT.h
- * VERSION:     0.5
+ * FILE:        DemersTech_DHT.h
+ * VERSION:     0.5.3
  * PURPOSE:     Spark Interrupt driven lib for DHT sensors
  * LICENSE:     GPL v3 (http://www.gnu.org/licenses/gpl.html)
  *
- * S Piette (Piette Technologies) scott.piette@gmail.com (Originally, Scott gets all the credit for this one)
- *      January 2014        Original Spark Port
- *      October 2014        Added support for DHT21/22 sensors
- *                          Improved timing, moved FP math out of ISR
- *      September 2016      Updated for Particle and removed dependency
- *                          on callback_wrapper.  Use of callback_wrapper
- *                          is still for backward compatibility but not used
  *
- * Based on adaptation by niesteszeck (github/niesteszeck)
+ * Based on adaptation by Piette Tech
  * Based on original DHT11 library (http://playgroudn.adruino.cc/Main/DHT11Lib)
  *
  *
@@ -22,8 +15,8 @@
  *
  */
 
-#ifndef __PIETTETECH_DHT_H__
-#define __PIETTETECH_DHT_H__
+#ifndef __DEMERSTECH_DHT_H__
+#define __DEMERSTECH_DHT_H__
 
 // There appears to be a overrun in memory on this class.  For now please leave DHT_DEBUG_TIMING enabled
 #define DHT_DEBUG_TIMING        // Enable this for edge->edge timing collection
@@ -64,7 +57,7 @@
 class PietteTech_DHT
 {
 public:
-    PietteTech_DHT(uint8_t sigPin, uint8_t dht_type, void (*callback_wrapper)() = NULL);
+    DemersTech_DHT(uint8_t sigPin, uint8_t dht_type, void (*callback_wrapper)() = NULL);
     void begin(uint8_t sigPin, uint8_t dht_type, void (*callback_wrapper)() = NULL);
 /*
  * NOTE:  isrCallback is only here for backwards compatibility with v0.3 and earlier
