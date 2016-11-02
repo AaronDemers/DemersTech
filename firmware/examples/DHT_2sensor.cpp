@@ -23,9 +23,9 @@
 //#include "PietteTech_DHT.h"                 // Uncomment if building using CLI
 
 #define DHTTYPEA  DHT22       // Sensor type DHT11/21/22/AM2301/AM2302
-#define DHTPINA   3           // Digital pin for comunications
+#define DHTPINA   4           // Digital pin for comunications
 #define DHTTYPEB  DHT11       // Sensor type DHT11/21/22/AM2301/AM2302
-#define DHTPINB   2           // Digital pin for comunications
+#define DHTPINB   3           // Digital pin for comunications
 
 // Instantiate two class objects
 PietteTech_DHT DHTA(DHTPINA, DHTTYPEA);
